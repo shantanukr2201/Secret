@@ -42,7 +42,7 @@ app.use(passport.session());
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb://localhost:27017/userDB",{useNewUrlParser: true});
+  await mongoose.connect('mongodb+srv://shantanukr2201:Hack%401811@cluster0.luaqqsb.mongodb.net/userDB?retryWrites=true&w=majority');
 
   const userSchema=new mongoose.Schema ({
     email: String,
